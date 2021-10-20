@@ -1,0 +1,4168 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Mulish", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fffcf8;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.dashbord {
+  width: 1250px;
+  height: auto;
+  margin: auto;
+  background-color: #fffcf8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
+      grid-template-areas: "s a a a a a a a a a c c c c c c";
+}
+
+.dashbord__sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: s;
+  background-color: #ffffff;
+  height: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dashbord__sidebar__logo {
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+.dashbord__sidebar__logo svg {
+  width: 42px;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+.dashbord__sidebar__menu {
+  padding: 50px 0px;
+  background-color: #ffffff;
+}
+
+.dashbord__sidebar__menu ul {
+  background-color: #ffffff;
+}
+
+.dashbord__sidebar__menu ul li {
+  list-style: none;
+  margin: 45px 0px;
+  background-color: #ffffff;
+}
+
+.dashbord__sidebar__menu ul li a {
+  background-color: #ffffff;
+}
+
+.dashbord__sidebar__menu ul li a svg {
+  background-color: #ffffff;
+}
+
+.dashbord__sidebar__menu ul li:nth-child(1) a {
+  padding: 10px 10px 7px 10px;
+  background: black;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.dashbord__sidebar__menu ul li:nth-child(1) a svg {
+  width: 25px;
+  height: 25px;
+  background: black;
+  display: inline-block;
+}
+
+.dashbord__activity {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  background-color: #fffcf8;
+  height: auto;
+  padding: 30px 0px;
+}
+
+.dashbord__activity__header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding: 10px 15px;
+}
+
+.dashbord__activity__header__title {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 10;
+}
+
+.dashbord__activity__header__icon {
+  -ms-grid-column: 11;
+      grid-column-start: 11;
+  grid-column-end: -1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "s n";
+}
+
+.dashbord__activity__header__icon__search {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: s;
+  width: 33px;
+  height: 33px;
+  padding: 5px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  margin: 0px 5px 0px 0px;
+}
+
+.dashbord__activity__header__icon__notification {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: n;
+  width: 30px;
+  height: 33px;
+  padding: 5px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  margin: 0px 5px 0px 0px;
+}
+
+.dashbord__activity__health__meter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  padding: 10px 0px;
+}
+
+.dashbord__activity__health__meter span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #353535;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__sugar {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  margin: 10px;
+  padding: 15px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+}
+
+.dashbord__activity__health__meter__blood__sugar__header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__sugar__header__icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  background: #f8debd;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.dashbord__activity__health__meter__blood__sugar__header__icon svg {
+  width: 25px;
+  height: 25px;
+  background: #f8debd;
+}
+
+.dashbord__activity__health__meter__blood__sugar__header__title {
+  display: inline-block;
+  padding: 0px 0px 0px 10px;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__sugar__count {
+  background-color: white;
+  padding: 10px 0px;
+}
+
+.dashbord__activity__health__meter__blood__sugar__count__number {
+  background-color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.dashbord__activity__health__meter__blood__sugar__button {
+  width: 80px;
+  height: auto;
+  padding: 3px 5px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f8debd;
+  border-radius: 7px;
+}
+
+.dashbord__activity__health__meter__blood__sugar__flowchart {
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__sugar__flowchart img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__heart__rate {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+  margin: 10px;
+  padding: 15px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+}
+
+.dashbord__activity__health__meter__heart__rate__header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__heart__rate__header__icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  background: #fbf0f3;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.dashbord__activity__health__meter__heart__rate__header__icon svg {
+  width: 25px;
+  height: 25px;
+  background: #fbf0f3;
+}
+
+.dashbord__activity__health__meter__heart__rate__header__title {
+  display: inline-block;
+  padding: 0px 0px 0px 10px;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__heart__rate__count {
+  background-color: white;
+  padding: 10px 0px;
+}
+
+.dashbord__activity__health__meter__heart__rate__count__number {
+  background-color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.dashbord__activity__health__meter__heart__rate__button {
+  width: 80px;
+  height: auto;
+  padding: 3px 5px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fbf0f3;
+  border-radius: 7px;
+}
+
+.dashbord__activity__health__meter__heart__rate__flowchart {
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__heart__rate__flowchart img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__pressure {
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+  grid-column-end: -1;
+  margin: 10px;
+  padding: 15px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+}
+
+.dashbord__activity__health__meter__blood__pressure__header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__pressure__header__icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  background: #d0fbff;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.dashbord__activity__health__meter__blood__pressure__header__icon svg {
+  width: 25px;
+  height: 25px;
+  background: #d0fbff;
+}
+
+.dashbord__activity__health__meter__blood__pressure__header__title {
+  display: inline-block;
+  padding: 0px 0px 0px 10px;
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__pressure__count {
+  background-color: white;
+  padding: 10px 0px;
+}
+
+.dashbord__activity__health__meter__blood__pressure__count__number {
+  background-color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.dashbord__activity__health__meter__blood__pressure__button {
+  width: 80px;
+  height: auto;
+  padding: 3px 5px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #d0fbff;
+  border-radius: 7px;
+}
+
+.dashbord__activity__health__meter__blood__pressure__flowchart {
+  background-color: white;
+}
+
+.dashbord__activity__health__meter__blood__pressure__flowchart img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.dashbord__activity__flowchart {
+  width: 680px;
+  height: auto;
+  padding: 20px 15px;
+  margin: 10px auto;
+  border: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__header {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px 0px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "t t t t t d ";
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__header__tittle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: t;
+  font-size: 15px;
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__header__date {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: d;
+  padding: 3px 9px;
+  border-radius: 4px;
+  border: 1px solid #b2b2b2;
+  outline: none;
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__section {
+  width: 100%;
+  height: 300px;
+  padding: 30px 10px;
+  background: url(../assets/image/flowchart.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dashbord__activity__flowchart__section__main {
+  width: 100%;
+  height: 550px;
+  border-radius: 100%;
+  display: none;
+}
+
+.dashbord__activity__flowchart__section__name {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  padding: 15px 70px;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "a y m";
+  background-color: white;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.dashbord__activity__flowchart__section__name .main {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__section__name p {
+  font-size: 17px;
+  padding: 0px 20px 0px 0px;
+  display: inline-block;
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__section__name__aerobics {
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__section__name__aerobics .main {
+  background: #ca6b6e;
+}
+
+.dashbord__activity__flowchart__section__name__yoga {
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__section__name__yoga .main {
+  background: #478f96;
+}
+
+.dashbord__activity__flowchart__section__name__meditation {
+  background-color: white;
+}
+
+.dashbord__activity__flowchart__section__name__meditation .main {
+  background: #d08726;
+}
+
+.dashbord__activity__updates {
+  width: 680px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  margin: 20px 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashbord__activity__updates__title {
+  background-color: white;
+  padding: 5px 0px;
+}
+
+.dashbord__activity__updates__dates {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #d0fbff;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
+
+.dashbord__activity__updates__person {
+  background-color: white;
+  display: inline-block;
+  padding: 5px 0px;
+}
+
+.dashbord__bmicalculator {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 6;
+  grid-area: c;
+  background-color: #282828;
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.dashbord__bmicalculator__header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+  background: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0px 0px 15px 0px;
+}
+
+.dashbord__bmicalculator__header__title {
+  color: #f0f0f0;
+  background: none;
+  font-weight: 300;
+}
+
+.dashbord__bmicalculator__header__weekdays {
+  color: #f0f0f0;
+  background: none;
+  font-weight: 300;
+  padding: 5px 15px;
+  outline: none;
+  border-radius: 7px;
+}
+
+.dashbord__bmicalculator__metters {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
+      grid-template-areas: "h bmi" "w bmi";
+}
+
+.dashbord__bmicalculator__metters__height {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h;
+  width: 100%;
+  height: 70px;
+  margin: 5px 5px 5px 0px;
+  padding: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #f8debd;
+}
+
+.dashbord__bmicalculator__metters__height__title {
+  padding: 8px;
+  background: #f8debd;
+}
+
+.dashbord__bmicalculator__metters__height__uilitis__icon {
+  background: #f8debd;
+}
+
+.dashbord__bmicalculator__metters__height__uilitis__icon svg {
+  width: 70px;
+  height: auto;
+  background: #f8debd;
+}
+
+.dashbord__bmicalculator__metters__height__uilitis__numbers {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  background: #f8debd;
+}
+
+.dashbord__bmicalculator__metters__weight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: w;
+  width: 100%;
+  height: 70px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #d0fbff;
+  margin: 5px 5px 5px 0px;
+  padding: 15px;
+}
+
+.dashbord__bmicalculator__metters__weight__title {
+  padding: 8px;
+  background: #d0fbff;
+}
+
+.dashbord__bmicalculator__metters__weight__utilitis__icon {
+  background: #d0fbff;
+}
+
+.dashbord__bmicalculator__metters__weight__utilitis__icon svg {
+  width: 70px;
+  height: auto;
+  background: #d0fbff;
+}
+
+.dashbord__bmicalculator__metters__weight__utilitis__numbers {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  background: #d0fbff;
+}
+
+.dashbord__bmicalculator__metters__bmi {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: bmi;
+  margin: 5px 0px 5px 10px;
+  padding: 15px;
+  background: #4a4949;
+  border-radius: 8px;
+}
+
+.dashbord__bmicalculator__metters__bmi__title {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 0px;
+  background: #4a4949;
+  color: #f0f0f0;
+}
+
+.dashbord__bmicalculator__metters__bmi__number__value {
+  width: 100%;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  background: #4a4949;
+}
+
+.dashbord__bmicalculator__metters__bmi__number__value .number {
+  font-size: 20px;
+  color: #f0f0f0;
+  background: #4a4949;
+}
+
+.dashbord__bmicalculator__metters__bmi__number__value .button {
+  padding: 5px 15px;
+  background: #d6ffdd;
+  color: black;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.dashbord__bmicalculator__metters__bmi__metter {
+  width: 100%;
+  height: auto;
+  background: #4a4949;
+}
+
+.dashbord__bmicalculator__metters__bmi__metter svg {
+  width: 160px;
+  height: auto;
+  background: #4a4949;
+}
+
+.dashbord__bmicalculator hr {
+  margin: 30px 0px;
+  border: 1px solid #4f4e4e;
+}
+
+.dashbord__bmicalculator__body__measurements {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  height: auto;
+  background-color: #282828;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__header {
+  width: 100%;
+  height: auto;
+  background-color: #282828;
+  text-align: center;
+  color: #f0f0f0;
+  padding: 20px 0px;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__header__title {
+  text-align: center;
+  padding: 7px 0px;
+  font-size: 17px;
+  background-color: #282828;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__header__dates {
+  text-align: center;
+  font-size: 14px;
+  background-color: #282828;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__header__button {
+  width: auto;
+  padding: 5px 8px;
+  display: inline-block;
+  font-size: 12px;
+  background: #5e5e5e;
+  color: #f0f0f0;
+  border-radius: 6px;
+  margin: 3% 16%;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body {
+  width: 100%;
+  height: auto;
+  background-color: #282828;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__chest {
+  width: 120px;
+  height: auto;
+  padding: 10px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__chest__title {
+  background: white;
+  font-size: 14px;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 {
+  font-weight: 400;
+  background: white;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 .up__icon {
+  background: white;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__waist {
+  width: 120px;
+  height: auto;
+  padding: 10px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__waist__title {
+  background: white;
+  font-size: 14px;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 {
+  font-weight: 400;
+  background: white;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 .dawn__icon {
+  background: white;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__hip {
+  width: 120px;
+  height: auto;
+  padding: 10px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+          box-shadow: 0px 0px 10px #e0e0e0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__hip__title {
+  background: white;
+  font-size: 14px;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 {
+  font-weight: 400;
+  background: white;
+}
+
+.dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 .dawn__icon {
+  background: white;
+}
+
+.dashbord__bmicalculator__body__measurements__image {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: -1;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #282828;
+}
+
+.dashbord__bmicalculator__body__measurements__image img:nth-child(1) {
+  width: 150px;
+  height: auto;
+  margin: 0px 20px;
+  background-color: #282828;
+}
+
+.dashbord__bmicalculator__body__measurements__image img:nth-child(2) {
+  width: 170px;
+  height: auto;
+  position: absolute;
+  background: none;
+  margin: 70px 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .dashbord {
+    width: 1050px;
+    height: auto;
+    margin: auto;
+    background-color: #fffcf8;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[16];
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-areas: "s a a a a a a a a a c c c c c c";
+  }
+  .dashbord__sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+            box-shadow: 0px 0px 10px #e0e0e0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .dashbord__sidebar__logo {
+    padding: 5px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__logo svg {
+    width: 42px;
+    height: 40px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu {
+    padding: 50px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li {
+    list-style: none;
+    margin: 45px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a svg {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a {
+    padding: 10px 10px 7px 10px;
+    background: black;
+    display: inline-block;
+    border-radius: 6px;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a svg {
+    width: 25px;
+    height: 25px;
+    background: black;
+    display: inline-block;
+  }
+  .dashbord__activity {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    background-color: #fffcf8;
+    height: auto;
+    padding: 30px 0px;
+  }
+  .dashbord__activity__header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    padding: 10px 15px;
+  }
+  .dashbord__activity__header__title {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 10;
+  }
+  .dashbord__activity__header__icon {
+    -ms-grid-column: 11;
+        grid-column-start: 11;
+    grid-column-end: -1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "s n";
+  }
+  .dashbord__activity__header__icon__search {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    width: 33px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__header__icon__notification {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: n;
+    width: 30px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__health__meter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #353535;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #f8debd;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #f8debd;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__sugar__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f8debd;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate {
+    -ms-grid-column: 7;
+        grid-column-start: 7;
+    grid-column-end: -1;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__heart__rate__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #fbf0f3;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #fbf0f3;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__heart__rate__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__heart__rate__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fbf0f3;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #d0fbff;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #d0fbff;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__pressure__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #d0fbff;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart {
+    width: 560px;
+    height: auto;
+    padding: 30px 15px;
+    margin: 20px auto;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header {
+    display: -ms-grid;
+    display: grid;
+    padding: 10px 0px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t t t t d ";
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__tittle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: t;
+    font-size: 15px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__date {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    grid-area: d;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section {
+    width: 100%;
+    height: 300px;
+    padding: 30px 10px;
+    background: url(../assets/image/flowchart.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .dashbord__activity__flowchart__section__main {
+    width: 100%;
+    height: 550px;
+    border-radius: 100%;
+    display: none;
+  }
+  .dashbord__activity__flowchart__section__name {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    padding: 15px 0px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "a y m";
+    background-color: white;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .dashbord__activity__flowchart__section__name .main {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name p {
+    font-size: 17px;
+    padding: 0px 20px 0px 0px;
+    display: inline-block;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__aerobics {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__aerobics .main {
+    background: #ca6b6e;
+  }
+  .dashbord__activity__flowchart__section__name__yoga {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__yoga .main {
+    background: #478f96;
+  }
+  .dashbord__activity__flowchart__section__name__meditation {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__meditation .main {
+    background: #d08726;
+  }
+  .dashbord__activity__updates {
+    width: 560px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    margin: 20px 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dashbord__activity__updates__title {
+    background-color: white;
+    padding: 5px 0px;
+  }
+  .dashbord__activity__updates__dates {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #d0fbff;
+    border-radius: 8px;
+    margin: 5px 0px;
+  }
+  .dashbord__activity__updates__person {
+    background-color: white;
+    display: inline-block;
+    padding: 5px 0px;
+  }
+  .dashbord__bmicalculator {
+    -ms-grid-row: 1;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 6;
+    grid-area: c;
+    background-color: #282828;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .dashbord__bmicalculator__header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px 0px 15px 0px;
+  }
+  .dashbord__bmicalculator__header__title {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+  }
+  .dashbord__bmicalculator__header__weekdays {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 7px;
+  }
+  .dashbord__bmicalculator__metters {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 150px 1fr;
+        grid-template-columns: 150px 1fr;
+        grid-template-areas: "h bmi" "w bmi";
+  }
+  .dashbord__bmicalculator__metters__height {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h;
+    width: 100%;
+    height: 70px;
+    margin: 5px 5px 5px 0px;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__title {
+    padding: 8px;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon {
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon svg {
+    width: 70px;
+    height: auto;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__numbers {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__weight {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: w;
+    width: 100%;
+    height: 70px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #d0fbff;
+    margin: 5px 5px 5px 0px;
+    padding: 15px;
+  }
+  .dashbord__bmicalculator__metters__weight__title {
+    padding: 8px;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon {
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon svg {
+    width: 70px;
+    height: auto;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__numbers {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__bmi {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: bmi;
+    margin: 5px 0px 5px 10px;
+    padding: 15px;
+    background: #4a4949;
+    border-radius: 8px;
+  }
+  .dashbord__bmicalculator__metters__bmi__title {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 0px;
+    background: #4a4949;
+    color: #f0f0f0;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value {
+    width: 100%;
+    height: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0px;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .number {
+    font-size: 20px;
+    color: #f0f0f0;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .button {
+    padding: 5px 15px;
+    background: #d6ffdd;
+    color: black;
+    border-radius: 6px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter {
+    width: 100%;
+    height: auto;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter svg {
+    width: 160px;
+    height: auto;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator hr {
+    margin: 30px 0px;
+    border: 1px solid #4f4e4e;
+  }
+  .dashbord__bmicalculator__body__measurements {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+    text-align: center;
+    color: #f0f0f0;
+    padding: 20px 0px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__title {
+    text-align: center;
+    padding: 7px 0px;
+    font-size: 17px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__dates {
+    text-align: center;
+    font-size: 14px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__button {
+    width: auto;
+    padding: 5px 8px;
+    display: inline-block;
+    font-size: 12px;
+    background: #5e5e5e;
+    color: #f0f0f0;
+    border-radius: 6px;
+    margin: 3% 16%;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 .up__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__image {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: -1;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(1) {
+    width: 150px;
+    height: auto;
+    margin: 0px 20px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(2) {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    background: none;
+    margin: 70px 10px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .dashbord {
+    width: 800px;
+    height: auto;
+    margin: auto;
+    background-color: #fffcf8;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[16];
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-areas: "s s . a a a a a a a a a a a a a" "s s . c c c c c c c c c c c c c";
+  }
+  .dashbord__sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+            box-shadow: 0px 0px 10px #e0e0e0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .dashbord__sidebar__logo {
+    padding: 5px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__logo svg {
+    width: 42px;
+    height: 40px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu {
+    padding: 50px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li {
+    list-style: none;
+    margin: 45px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a svg {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a {
+    padding: 10px 10px 7px 10px;
+    background: black;
+    display: inline-block;
+    border-radius: 6px;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a svg {
+    width: 25px;
+    height: 25px;
+    background: black;
+    display: inline-block;
+  }
+  .dashbord__activity {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    background-color: #fffcf8;
+    height: auto;
+    padding: 30px 0px;
+  }
+  .dashbord__activity__header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    padding: 0px 0px 15px 0px;
+  }
+  .dashbord__activity__header__title {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 10;
+  }
+  .dashbord__activity__header__icon {
+    -ms-grid-column: 11;
+        grid-column-start: 11;
+    grid-column-end: -1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "s n";
+  }
+  .dashbord__activity__header__icon__search {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    width: 33px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__header__icon__notification {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: n;
+    width: 30px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__health__meter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #353535;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #f8debd;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #f8debd;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__sugar__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f8debd;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate {
+    -ms-grid-column: 7;
+        grid-column-start: 7;
+    grid-column-end: -1;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__heart__rate__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #fbf0f3;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #fbf0f3;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__heart__rate__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__heart__rate__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fbf0f3;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #d0fbff;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #d0fbff;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__pressure__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #d0fbff;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart {
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+    margin: 20px 0px;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header {
+    display: -ms-grid;
+    display: grid;
+    padding: 10px 0px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t t t t d ";
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__tittle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: t;
+    font-size: 25px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__date {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    grid-area: d;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section {
+    width: 100%;
+    height: 300px;
+    padding: 30px 10px;
+    background: url(../assets/image/flowchart.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .dashbord__activity__flowchart__section__main {
+    width: 100%;
+    height: 550px;
+    border-radius: 100%;
+    display: none;
+  }
+  .dashbord__activity__flowchart__section__section__name {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    padding: 15px 0px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "a y m";
+    background-color: white;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .dashbord__activity__flowchart__section__section__name .main {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__section__name p {
+    font-size: 17px;
+    padding: 0px 20px 0px 0px;
+    display: inline-block;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__section__name__aerobics {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__section__name__aerobics .main {
+    background: #ca6b6e;
+  }
+  .dashbord__activity__flowchart__section__section__name__yoga {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__section__name__yoga .main {
+    background: #478f96;
+  }
+  .dashbord__activity__flowchart__section__section__name__meditation {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__section__name__meditation .main {
+    background: #d08726;
+  }
+  .dashbord__activity__updates {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    margin: 20px 0px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dashbord__activity__updates__title {
+    background-color: white;
+    padding: 5px 0px;
+  }
+  .dashbord__activity__updates__dates {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #d0fbff;
+    border-radius: 8px;
+    margin: 5px 0px;
+  }
+  .dashbord__activity__updates__person {
+    background-color: white;
+    display: inline-block;
+    padding: 5px 0px;
+  }
+  .dashbord__bmicalculator {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 13;
+    grid-area: c;
+    background-color: #282828;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .dashbord__bmicalculator__header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px 0px 15px 0px;
+  }
+  .dashbord__bmicalculator__header__title {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+  }
+  .dashbord__bmicalculator__header__weekdays {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 7px;
+  }
+  .dashbord__bmicalculator__metters {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "h bmi" "w bmi";
+  }
+  .dashbord__bmicalculator__metters__height {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h;
+    width: 100%;
+    height: 75px;
+    margin: 5px 5px 5px 0px;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__title {
+    padding: 8px;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon {
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon svg {
+    width: 80px;
+    height: auto;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__numbers {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__weight {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: w;
+    width: 100%;
+    height: 75px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #d0fbff;
+    margin: 5px 5px 5px 0px;
+    padding: 15px;
+  }
+  .dashbord__bmicalculator__metters__weight__title {
+    padding: 8px;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon {
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon svg {
+    width: 80px;
+    height: auto;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__numbers {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__bmi {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: bmi;
+    margin: 0px 0px 5px 10px;
+    padding: 15px;
+    background: #4a4949;
+    border-radius: 8px;
+  }
+  .dashbord__bmicalculator__metters__bmi__title {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 0px;
+    background: #4a4949;
+    color: #f0f0f0;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value {
+    width: 100%;
+    height: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0px;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .number {
+    font-size: 26px;
+    color: #f0f0f0;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .button {
+    padding: 5px 15px;
+    background: #d6ffdd;
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter {
+    width: 100%;
+    height: auto;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter svg {
+    width: 260px;
+    height: auto;
+    background: #4a4949;
+    padding: 10px 0px;
+  }
+  .dashbord__bmicalculator hr {
+    margin: 30px 0px;
+    border: 1px solid #4f4e4e;
+  }
+  .dashbord__bmicalculator__body__measurements {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+    text-align: center;
+    color: #f0f0f0;
+    padding: 20px 0px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__title {
+    text-align: center;
+    padding: 7px 0px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__dates {
+    text-align: center;
+    font-size: 14px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__button {
+    width: auto;
+    padding: 5px 8px;
+    display: inline-block;
+    font-size: 12px;
+    background: #5e5e5e;
+    color: #f0f0f0;
+    border-radius: 6px;
+    margin: 3% 16%;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 .up__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__image {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: -1;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(1) {
+    width: 171px;
+    height: auto;
+    margin: 10px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(2) {
+    width: 190px;
+    height: auto;
+    position: absolute;
+    background: none;
+    margin: 90px 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dashbord {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    background-color: #fffcf8;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "s s . a  a a a a a a a a a a a a" "s s . c c c c c c c c c c c c c";
+  }
+  .dashbord__sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+            box-shadow: 0px 0px 10px #e0e0e0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .dashbord__sidebar__logo {
+    padding: 5px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__logo svg {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu {
+    padding: 50px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li {
+    list-style: none;
+    margin: 45px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a svg {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a {
+    padding: 7px 5px 4px 5px;
+    background: black;
+    display: inline-block;
+    border-radius: 6px;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a svg {
+    width: 25px;
+    height: 25px;
+    background: black;
+    display: inline-block;
+  }
+  .dashbord__activity {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    background-color: #fffcf8;
+    height: auto;
+    padding: 30px 0px;
+  }
+  .dashbord__activity__header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "h h h h h i i";
+    padding: 0px 0px 15px 0px;
+  }
+  .dashbord__activity__header__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h;
+  }
+  .dashbord__activity__header__icon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-area: i;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "s n";
+  }
+  .dashbord__activity__header__icon__search {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    width: 33px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__header__icon__notification {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: n;
+    width: 30px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__health__meter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (40px)[12];
+        grid-template-columns: repeat(12, 40px);
+    -ms-grid-rows: (300px)[2];
+        grid-template-rows: repeat(2, 300px);
+    padding: 20px 0px;
+  }
+  .dashbord__activity__health__meter span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #353535;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #f8debd;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #f8debd;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__sugar__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f8debd;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate {
+    -ms-grid-column: 7;
+        grid-column-start: 7;
+    grid-column-end: -1;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__heart__rate__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #fbf0f3;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #fbf0f3;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__heart__rate__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__heart__rate__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fbf0f3;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 7;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #d0fbff;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #d0fbff;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__pressure__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #d0fbff;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart {
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+    margin: 20px 0px;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header {
+    display: -ms-grid;
+    display: grid;
+    padding: 10px 0px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t t t t d ";
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__tittle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: t;
+    font-size: 15px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__date {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    grid-area: d;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section {
+    width: 100%;
+    height: 500px;
+    padding: 30px 10px;
+    background: white;
+  }
+  .dashbord__activity__flowchart__section__main {
+    width: 100%;
+    height: 400px;
+    border-radius: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+        grid-template-areas: "lt rt" "lb rb";
+  }
+  .dashbord__activity__flowchart__section__main__left__top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: lt;
+    background: white;
+  }
+  .dashbord__activity__flowchart__section__main__left__bottom {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: lb;
+    background-color: #478f96;
+  }
+  .dashbord__activity__flowchart__section__main__right__top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: rt;
+    background-color: #ca6b6e;
+  }
+  .dashbord__activity__flowchart__section__main__right__bottom {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: rb;
+    background-color: #d08726;
+  }
+  .dashbord__activity__flowchart__section__name {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    padding: 15px 0px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "a y m";
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name .main {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name p {
+    font-size: 18px;
+    display: inline-block;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__aerobics {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__aerobics .main {
+    background: #ca6b6e;
+  }
+  .dashbord__activity__flowchart__section__name__yoga {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__yoga .main {
+    background: #478f96;
+  }
+  .dashbord__activity__flowchart__section__name__meditation {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__meditation .main {
+    background: #d08726;
+  }
+  .dashbord__activity__updates {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    margin: 20px 0px;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    display: block;
+  }
+  .dashbord__activity__updates__title {
+    background-color: white;
+    padding: 5px 0px;
+  }
+  .dashbord__activity__updates__dates {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #d0fbff;
+    border-radius: 8px;
+    margin: 5px 0px;
+  }
+  .dashbord__activity__updates__person {
+    background-color: white;
+    display: inline-block;
+    padding: 5px 0px;
+  }
+  .dashbord__bmicalculator {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 13;
+    grid-area: c;
+    background-color: #282828;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .dashbord__bmicalculator__header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px 0px 15px 0px;
+  }
+  .dashbord__bmicalculator__header__title {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+  }
+  .dashbord__bmicalculator__header__weekdays {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 7px;
+  }
+  .dashbord__bmicalculator__metters {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "h bmi" "w bmi";
+  }
+  .dashbord__bmicalculator__metters__height {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h;
+    width: 100%;
+    height: 75px;
+    margin: 5px 5px 5px 0px;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__title {
+    padding: 8px;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon {
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon svg {
+    width: 80px;
+    height: auto;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__numbers {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__weight {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: w;
+    width: 100%;
+    height: 75px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #d0fbff;
+    margin: 5px 5px 5px 0px;
+    padding: 15px;
+  }
+  .dashbord__bmicalculator__metters__weight__title {
+    padding: 8px;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon {
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon svg {
+    width: 80px;
+    height: auto;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__numbers {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__bmi {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: bmi;
+    margin: 0px 0px 5px 10px;
+    padding: 15px;
+    background: #4a4949;
+    border-radius: 8px;
+  }
+  .dashbord__bmicalculator__metters__bmi__title {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 0px;
+    background: #4a4949;
+    color: #f0f0f0;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value {
+    width: 100%;
+    height: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0px;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .number {
+    font-size: 26px;
+    color: #f0f0f0;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .button {
+    padding: 5px 15px;
+    background: #d6ffdd;
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter {
+    width: 100%;
+    height: auto;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter svg {
+    width: 220px;
+    height: auto;
+    background: #4a4949;
+    padding: 10px 0px;
+  }
+  .dashbord__bmicalculator hr {
+    margin: 30px 0px;
+    border: 1px solid #4f4e4e;
+  }
+  .dashbord__bmicalculator__body__measurements {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+    text-align: center;
+    color: #f0f0f0;
+    padding: 20px 0px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__title {
+    text-align: center;
+    padding: 7px 0px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__dates {
+    text-align: center;
+    font-size: 14px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__button {
+    width: auto;
+    padding: 5px 8px;
+    display: inline-block;
+    font-size: 12px;
+    background: #5e5e5e;
+    color: #f0f0f0;
+    border-radius: 6px;
+    margin: 3% 16%;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 .up__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__image {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: -1;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(1) {
+    width: 150px;
+    height: auto;
+    margin: 57px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(2) {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    background: none;
+    margin: 131px 46px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dashbord {
+    width: 315px;
+    height: auto;
+    margin: auto;
+    background-color: #fffcf8;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[16];
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-areas: "s s s . a a a a a a a a a a a a" "c c c c c c c c c c c c c c c c";
+  }
+  .dashbord__sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #e0e0e0;
+            box-shadow: 0px 0px 10px #e0e0e0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .dashbord__sidebar__logo {
+    padding: 5px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__logo svg {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu {
+    padding: 50px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li {
+    list-style: none;
+    margin: 45px 0px;
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li a svg {
+    background-color: #ffffff;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a {
+    padding: 7px 5px 4px 5px;
+    background: black;
+    display: inline-block;
+    border-radius: 6px;
+  }
+  .dashbord__sidebar__menu ul li:nth-child(1) a svg {
+    width: 25px;
+    height: 25px;
+    background: black;
+    display: inline-block;
+  }
+  .dashbord__activity {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+    background-color: #fffcf8;
+    height: auto;
+    padding: 30px 0px;
+  }
+  .dashbord__activity__header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "h h h h h i i";
+    padding: 0px 0px 15px 0px;
+  }
+  .dashbord__activity__header__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h;
+  }
+  .dashbord__activity__header__icon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-area: i;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "s n";
+  }
+  .dashbord__activity__header__icon__search {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: s;
+    width: 33px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__header__icon__notification {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: n;
+    width: 30px;
+    height: 33px;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0px 0px 7px #eeeeee;
+            box-shadow: 0px 0px 7px #eeeeee;
+    margin: 0px 5px 0px 0px;
+  }
+  .dashbord__activity__health__meter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (40px)[6];
+        grid-template-columns: repeat(6, 40px);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    padding: 20px 0px;
+  }
+  .dashbord__activity__health__meter span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #353535;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #f8debd;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #f8debd;
+  }
+  .dashbord__activity__health__meter__blood__sugar__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__sugar__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f8debd;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__sugar__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__heart__rate__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #fbf0f3;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #fbf0f3;
+  }
+  .dashbord__activity__health__meter__heart__rate__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__heart__rate__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__heart__rate__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fbf0f3;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__heart__rate__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #d0fbff;
+    border-radius: 7px;
+    display: inline-block;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__icon svg {
+    width: 25px;
+    height: 25px;
+    background: #d0fbff;
+  }
+  .dashbord__activity__health__meter__blood__pressure__header__title {
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count {
+    background-color: white;
+    padding: 10px 0px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__count__number {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .dashbord__activity__health__meter__blood__pressure__button {
+    width: 80px;
+    height: auto;
+    padding: 3px 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #d0fbff;
+    border-radius: 7px;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart {
+    background-color: white;
+  }
+  .dashbord__activity__health__meter__blood__pressure__flowchart img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart {
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+    margin: 20px 0px;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header {
+    display: -ms-grid;
+    display: grid;
+    padding: 10px 0px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "t t t t t d ";
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__tittle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: t;
+    font-size: 15px;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__header__date {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    grid-area: d;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section {
+    width: 100%;
+    height: 270px;
+    padding: 30px 10px;
+    background: white;
+  }
+  .dashbord__activity__flowchart__section__main {
+    width: 100%;
+    height: 210px;
+    border-radius: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+        grid-template-areas: "lt rt" "lb rb";
+  }
+  .dashbord__activity__flowchart__section__main__left__top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: lt;
+    background: white;
+  }
+  .dashbord__activity__flowchart__section__main__left__bottom {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: lb;
+    background-color: #478f96;
+  }
+  .dashbord__activity__flowchart__section__main__right__top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: rt;
+    background-color: #ca6b6e;
+  }
+  .dashbord__activity__flowchart__section__main__right__bottom {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: rb;
+    background-color: #d08726;
+  }
+  .dashbord__activity__flowchart__section__name {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    padding: 15px 0px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "a y m";
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name .main {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name p {
+    font-size: 11px;
+    display: inline-block;
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__aerobics {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__aerobics .main {
+    background: #ca6b6e;
+  }
+  .dashbord__activity__flowchart__section__name__yoga {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__yoga .main {
+    background: #478f96;
+  }
+  .dashbord__activity__flowchart__section__name__meditation {
+    background-color: white;
+  }
+  .dashbord__activity__flowchart__section__name__meditation .main {
+    background: #d08726;
+  }
+  .dashbord__activity__updates {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    margin: 20px 0px;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    display: block;
+  }
+  .dashbord__activity__updates__title {
+    background-color: white;
+    padding: 5px 0px;
+  }
+  .dashbord__activity__updates__dates {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #d0fbff;
+    border-radius: 8px;
+    margin: 5px 0px;
+  }
+  .dashbord__activity__updates__person {
+    background-color: white;
+    display: inline-block;
+    padding: 5px 0px;
+  }
+  .dashbord__bmicalculator {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 16;
+    grid-area: c;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background-color: #282828;
+    border-radius: 20px;
+  }
+  .dashbord__bmicalculator__header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px 0px 15px 0px;
+  }
+  .dashbord__bmicalculator__header__title {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+  }
+  .dashbord__bmicalculator__header__weekdays {
+    color: #f0f0f0;
+    background: none;
+    font-weight: 300;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 7px;
+  }
+  .dashbord__bmicalculator__metters {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "h h" "w w" "bmi bmi";
+  }
+  .dashbord__bmicalculator__metters__height {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h;
+    width: 100%;
+    height: 75px;
+    margin: 5px auto;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__title {
+    padding: 8px;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon {
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__icon svg {
+    width: 80px;
+    height: auto;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__height__uilitis__numbers {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    background: #f8debd;
+  }
+  .dashbord__bmicalculator__metters__weight {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: w;
+    width: 100%;
+    height: 75px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #d0fbff;
+    margin: 5px auto;
+    padding: 15px;
+  }
+  .dashbord__bmicalculator__metters__weight__title {
+    padding: 8px;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon {
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__icon svg {
+    width: 80px;
+    height: auto;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__weight__utilitis__numbers {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    background: #d0fbff;
+  }
+  .dashbord__bmicalculator__metters__bmi {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: bmi;
+    margin: 5px auto;
+    padding: 15px;
+    background: #4a4949;
+    border-radius: 8px;
+  }
+  .dashbord__bmicalculator__metters__bmi__title {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 0px;
+    background: #4a4949;
+    color: #f0f0f0;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value {
+    width: 100%;
+    height: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0px;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .number {
+    font-size: 26px;
+    color: #f0f0f0;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__number__value .button {
+    padding: 5px 15px;
+    background: #d6ffdd;
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter {
+    width: 100%;
+    height: auto;
+    background: #4a4949;
+  }
+  .dashbord__bmicalculator__metters__bmi__metter svg {
+    width: 235px;
+    height: auto;
+    background: #4a4949;
+    padding: 10px 0px;
+  }
+  .dashbord__bmicalculator hr {
+    margin: 30px 0px;
+    border: 1px solid #4f4e4e;
+  }
+  .dashbord__bmicalculator__body__measurements {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+    color: #f0f0f0;
+    padding: 20px 0px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__title {
+    text-align: center;
+    padding: 7px 0px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__dates {
+    text-align: center;
+    font-size: 14px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__header__button {
+    width: auto;
+    padding: 5px 8px;
+    display: inline-block;
+    font-size: 12px;
+    background: #5e5e5e;
+    color: #f0f0f0;
+    border-radius: 6px;
+    margin: 3% 16%;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body {
+    width: 100%;
+    height: auto;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__chest__number__value h1 .up__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__waist__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px #f0f0f0;
+            box-shadow: 0px 0px 10px #f0f0f0;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__title {
+    background: white;
+    font-size: 14px;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 {
+    font-weight: 400;
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__utilites__body__hip__number__value h1 .dawn__icon {
+    background: white;
+  }
+  .dashbord__bmicalculator__body__measurements__image {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(1) {
+    width: 150px;
+    height: auto;
+    margin: 57px;
+    background-color: #282828;
+  }
+  .dashbord__bmicalculator__body__measurements__image img:nth-child(2) {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    background: none;
+    margin: 131px 46px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
